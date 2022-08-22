@@ -1,0 +1,77 @@
+<!-- 
+This is an html project from Free Code Camp
+
+Course Title   : Learn Basic CSS by Building a Cafe Menu
+Certification  : (Web) Responsive Web Design
+Last Accessed  :  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cafe Menu</title>
+    <meta charset="UTF-8">
+
+
+    <!-- Style element gives space to write about CSS -->
+    <!-- This is one way to use CSS : internal CSS -->
+    <style>
+        /*
+                This is syntax for CSS Comment
+                
+                Element Styles are applied using CSS rules
+                In the rule, there are selectors that selects the
+                  elements to be applied and their CSS attributes
+                CSS attributes are enclosed in {} and has 
+                  properties with their values
+                Values of a CSS property depends on the property
+                  and they can have their own parameters
+
+                Syntax for applying CSS rule is
+
+                selectors {
+                    property: value;
+                    ...
+                    property: value;
+                }
+            */
+        h1 {
+            text-align: center;
+        }
+
+        /* Selectors can be combined using COMMAS */
+        h1,
+        h2,
+        p {
+            text-align: center;
+        }
+    </style>
+
+    <!-- ANOTHER way to use CSS : external CSS -->
+    <!-- This is often used to keep codes clean -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- This is added to make styling on mobile and desktop look -->
+    <!--   similar. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+
+<!-- Content for the CSS Project 1 -->
+
+<body>
+    <!-- Div added for layout and design purposes -->
+    <div class="menu">
+        <header>
+            <h1>CAMPER CAFE</h1>
+            <p>Est. 2020</p>
+        </header>
+        <main>
+            <section>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>HTML - 6. Form</title>
+    </head>
+    <body>
+
+        <form action="https://freecatphotoapp.com/submit-cat-photo">
+
+            <!-- Fieldset used to group related input and labels    -->
+            <fieldset>
+
+                <legend>Is your cat an indoor or outdoor cat?</legend>
+
+                <!-- First way to associate label with input        -->
+                <!-- Label and Input is nested under <label>        -->
+                <!--                                                -->
+                <!-- id="" is id of element for js/css              -->
+                <!-- name="" helps server process form              -->
+                <!-- value="" determine value of radio button       -->
+                <!--   when selected for processing form            -->
+                <!--   -> Great tip: always use value="" when using -->
+                <!--        radio/checkboxes                        -->
+                <!--   -> Sometimes id="" and value="" are the same -->
+                <label>
+                    <input id="indoor"
+                        type="radio" 
+                        name="indoor-outdoor" 
+                        value="indoor" checked> Indoor
+                </label>
+                <label>
+                    <input id="outdoor"
+                        type="radio" 
+                        name="indor-outdoor" 
+                        value="outdoor"> Outdoor
+                </label>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>What's your cat's personality?</legend>
+
+                <!-- Second way to associate label with input      -->
+                <!-- Label has for="" attribute matching the       -->
+                <!--   the id="" of the input                      -->
+                <input id="loving"
+                    type="checkbox" 
+                    name="personality"
+                    value="loving"
+                    checked><label for="loving"> Loving</label>
+                <input id="lazy"
+                    type="checkbox" 
+                    name="personality"
+                    value="lazy"><label for="lazy"> Lazy</label>
+                <input id="energetic"
+                    type="checkbox" 
+                    name="personality"
+                    value="energetic"><label for="energetic"> Energetic</label>
+
+            </fieldset>
+
+            <input id="cat photo URL"
+                type="text" 
+                name="catphotourl"
+                placeholder="cat photo URL"
+                required>
+            
+            <button type="submit">Submit</button>
+
+        </form>
+    </body>
+</html>
